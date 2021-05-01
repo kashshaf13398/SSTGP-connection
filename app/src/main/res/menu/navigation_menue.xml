@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    <!--tools:showIn="navigation_view">-->
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_account"
+            android:icon="@drawable/icon_person"
+            android:title="My Account"/>
+        <item android:id="@+id/nav_all_users"
+            android:icon="@drawable/icon_user_list"
+            android:title="All Users" />
+        <item android:id="@+id/nav_message"
+            android:icon="@drawable/icon_messagee"
+            android:title="Message" />
+        <item android:id="@+id/nav_friend_request"
+            android:icon="@drawable/icon_friends"
+            android:title="Friends" />
+
+    </group>
+    <item android:title="Others">
+        <menu>
+            <item android:id="@+id/nav_log_out"
+                android:icon="@drawable/icon_logout"
+                android:title="Log out"/>
+        </menu>
+    </item>
+
+</menu>

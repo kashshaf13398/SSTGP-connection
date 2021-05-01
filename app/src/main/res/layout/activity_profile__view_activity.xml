@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_View_activity">
+
+    <TextView
+        android:id="@+id/profile_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_view_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="DisplayName"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/profile_view_image"
+        android:layout_width="272dp"
+        android:layout_height="280dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/icon_imageview" />
+
+    <Button
+        android:id="@+id/friend_req_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_display_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Send Friend Request" />
+
+    <Button
+        android:id="@+id/decline_friendreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_req_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Decline Request" />
+</RelativeLayout>
